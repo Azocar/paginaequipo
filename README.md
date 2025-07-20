@@ -10,6 +10,7 @@
 - **Nelson Ruiz**
 
 # Página Personal del Equipo
+Pagina web: https://azocar.github.io/paginaequipo/
 
  página web estática, muestra tema de investigación, y ofrece funcionalidades básicas de login y registro.
 
