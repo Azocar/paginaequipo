@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal del Equipo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="https://www.svgrepo.com/show/45206/pencil.svg">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#tema">Tema</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="equipo-investigacion-container">
+        <section id="equipo">
+            <h2>Miembros del equipo</h2>
+            <ul>
+                <li>
+                    <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=Gabriel" alt="Gabriel Azócar" class="avatar">
+                    <h3>Gabriel Azócar</h3>
+                    <p>Me gusta la tecnología y la innovación.</p>
+                    <a href="https://github.com/Azocar?tab=repositories" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/gabriel-azocar-7112b1a9/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=Rodilis" alt="Rodilis Zapata" class="avatar">
+                    <h3>Rodilis Zapata</h3>
+                    <p>Profesora de innovación y tecnología " con la tecnología no solo puedes innovar sinó transformar tu aprendizaje" 
+</p>
+                    <a href="https://www.instagram.com/paolaz_ven?igsh=MXRvd3NqYzdqaXk5cg==" target="_blank">Instagram</a>
+                    <a href="https://linkedin.com/in/rodiliszapata" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=Nancy" alt="Nancy Rodríguez" class="avatar">
+                    <h3>Nancy Rodríguez</h3>
+                    <p>Siempre en búsqueda de nuevos aprendizajes</p>
+                    <a href="https://twitter.com/nancyrodriguez" target="_blank">Twitter</a>
+                    <a href="https://linkedin.com/in/nancyrodriguez" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </section>
+        <section id="tema">
+            <h2>Tema</h2>
+            <div class="tema-card">
+                <h3>Inteligencia Artificial en la educación</h3>
+                <p><strong>¿Qué es?</strong><br>La Inteligencia Artificial (IA) en la educación utiliza algoritmos y sistemas inteligentes para personalizar el aprendizaje, automatizar tareas administrativas y mejorar la experiencia educativa.</p>
+                <p><strong>Aplicaciones principales:</strong></p>
+                <ul>
+                    <li><b>Personalización:</b> Plataformas que adaptan ejercicios y contenidos según el avance y estilo de cada estudiante.</li>
+                    <li><b>Evaluación automática:</b> Herramientas que corrigen exámenes y tareas, ahorrando tiempo a los docentes.</li>
+                    <li><b>Asistentes virtuales:</b> Bots y asistentes que responden dudas en tiempo real y guían el aprendizaje.</li>
+                    <li><b>Analítica educativa:</b> Sistemas que analizan datos para detectar dificultades y proponer mejoras.</li>
+                    <li><b>Recursos adaptativos:</b> Videos, lecturas y ejercicios que se ajustan al nivel y ritmo de cada alumno.</li>
+                </ul>
+                <p><strong>Ventajas:</strong></p>
+                <ul>
+                    <li>Aprendizaje más personalizado y motivador.</li>
+                    <li>Mejor gestión del tiempo para docentes y estudiantes.</li>
+                    <li>Detección temprana de dificultades y apoyo oportuno.</li>
+                    <li>Acceso a recursos innovadores y actualizados.</li>
+                </ul>
+                <p><strong>Desafíos:</strong></p>
+                <ul>
+                    <li>Privacidad y seguridad de los datos.</li>
+                    <li>Formación docente en nuevas tecnologías.</li>
+                    <li>Acceso equitativo a herramientas digitales.</li>
+                </ul>
+                <div class="tema-footer">¡La IA está transformando la forma de aprender!</div>
+            </div>
+            <button id="ver-mas-btn">Ver más</button>
+        </section>
+    </div>
+    <div class="auth-container">
+        <section id="login">
+            <h2>Login</h2>
+            <form>
+                <label for="login-usuario">Usuario:</label>
+                <input type="text" id="login-usuario" name="usuario" required>
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </section>
+        <section id="registro">
+            <h2>Registro</h2>
+            <form>
+                <label for="reg-nombre">Nombre:</label>
+                <input type="text" id="reg-nombre" name="nombre" required>
+                <label for="reg-usuario">Usuario:</label>
+                <input type="text" id="reg-usuario" name="usuario" required>
+                <label for="reg-password">Contraseña:</label>
+                <input type="password" id="reg-password" name="password" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Equipo: Gabriel, Rodilis y Nancy. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+let infoVisible = false;
+const verMasBtn = document.getElementById('ver-mas-btn');
+verMasBtn.onclick = function() {
+    const temaSection = document.getElementById('tema');
+    let info = document.getElementById('ia-info');
+    if (!infoVisible) {
+        info = document.createElement('div');
+        info.id = 'ia-info';
+        info.style.padding = '18px';
+        info.style.background = '#e3f2fd';
+        info.style.borderRadius = '10px';
+        info.style.marginTop = '16px';
+        info.style.color = '#1976d2';
+        info.style.fontSize = '1.08em';
+        info.innerHTML = '<b>Ejemplos de IA en educación:</b><ul><li>Plataformas que adaptan ejercicios según el avance del estudiante.</li><li>Herramientas que corrigen automáticamente exámenes.</li><li>Asistentes virtuales que responden dudas en tiempo real.</li></ul><span style="color:#1565c0;font-weight:500;">¡La IA está transformando la forma de aprender!</span>';
+        temaSection.appendChild(info);
+        verMasBtn.textContent = 'Ver menos';
+        infoVisible = true;
+    } else {
+        if (info) info.remove();
+        verMasBtn.textContent = 'Ver más';
+        infoVisible = false;
+    }
+};
+</script>
+</body>
+</html>
