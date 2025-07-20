@@ -11,7 +11,7 @@
 
 # Página Personal del Equipo
 
- página web estática, muestra tema de investigación, y ofrecer funcionalidades básicas de login y registro.
+ página web estática, muestra tema de investigación, y ofrece funcionalidades básicas de login y registro.
 
 - **Integración y despliegue en GitHub**.
 
@@ -27,7 +27,7 @@ Puedes abrir el archivo `index.html` en cualquier navegador web. Para ver los ú
 
 [https://github.com/Azocar/paginaequipo](https://github.com/Azocar/paginaequipo)
 
-
+Pagina web: azocar.github.io/paginaequipo/
 
 ---
 
