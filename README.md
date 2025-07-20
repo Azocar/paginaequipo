@@ -27,7 +27,7 @@ Puedes abrir el archivo `index.html` en cualquier navegador web. Para ver los ú
 
 [https://github.com/Azocar/paginaequipo](https://github.com/Azocar/paginaequipo)
 
-Pagina web: azocar.github.io/paginaequipo/
+Pagina web: https://azocar.github.io/paginaequipo/
 
 ---
 
